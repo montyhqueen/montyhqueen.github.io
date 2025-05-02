@@ -1,3 +1,12 @@
-h1 p{
-  margin: auto;
+html {
+  background-color: #e8e8e8;
+  font-family: Verdana, Helvetica;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  color: #062024;
 }

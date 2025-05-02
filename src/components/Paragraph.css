@@ -1,0 +1,26 @@
+.photo-left {
+    float: left;
+    width: 400px;
+    height: auto;
+    padding-right: 40px;
+}
+
+.photo-right {
+    float: right;
+    width: 400px;
+    height: auto;
+    padding-left: 40px;
+}
+
+.pad {
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+.adjust{
+    text-align: left;
+}
+
+.content{
+    padding-bottom: 50px;
+}

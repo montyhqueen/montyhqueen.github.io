@@ -1,0 +1,44 @@
+.contact-form {
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    width: 40%;
+    min-width: 325px;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+.contact-fieldset{
+    background-color: #3ea5b5;
+    border-radius: 0.5em;
+    display: block;
+  }
+
+  
+input {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 5px;
+    width: 90%;
+    resize: none;
+}
+
+label {
+    color: #062024;
+}
+
+form button {
+  width: 75px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form button:hover{
+  background-color: #25808e;
+  border-color: #25808e;
+  border-radius: 5px;
+}
