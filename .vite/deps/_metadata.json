@@ -1,0 +1,46 @@
+{
+  "hash": "88207f78",
+  "configHash": "3bc1e6b8",
+  "lockfileHash": "a519aace",
+  "browserHash": "691517bd",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "a87bdafa",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "9f068443",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "97edae34",
+      "needsInterop": true
+    },
+    "sweetalert2": {
+      "src": "../../node_modules/sweetalert2/dist/sweetalert2.all.js",
+      "file": "sweetalert2.js",
+      "fileHash": "fce974b0",
+      "needsInterop": true
+    },
+    "react-animate-on-scroll": {
+      "src": "../../node_modules/react-animate-on-scroll/dist/scrollAnimation.min.js",
+      "file": "react-animate-on-scroll.js",
+      "fileHash": "f417df94",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-I2MDJFMI": {
+      "file": "chunk-I2MDJFMI.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
+}
