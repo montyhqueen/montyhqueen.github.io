@@ -1,5 +1,3 @@
-//import { useState } from "react";
-//import reactLogo from "./assets/react.svg";
 import UB from "./images/UB_Sign.jpg";
 import UM from "./images/Ultra-Maritime-Operations.webp";
 import webStock from "./images/web-stock-image.png";
@@ -9,12 +7,9 @@ import Navigation from "./components/Navigation";
 import Paragraph from "./components/Paragraph";
 import SectionHeader from "./components/SectionHeader";
 import ContactForm from "./components/ContactForm";
-import { useRef, useState, useEffect } from "react";
 
 function App() {
   //const [count, setCount] = useState(0);
-
-  var content = "";
   var jobContent = [
     "August 2020 - Current",
     <br />,
