@@ -1,12 +1,10 @@
-import { MouseEvent, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Navigation.css";
 import profilePic from "../images/Montana_Queen.jpg";
 
 function Navigation() {
   const navBar = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [isShrunk, ShrinkStuff] = useState(false);
-  const [height, setHeight] = useState(0);
 
   const [picStyle, setPic] = useState({
     height: "100px",
@@ -14,14 +12,9 @@ function Navigation() {
     transition: "0.3s ease",
   });
 
-  const [fontStyle, setFont] = useState({
-    transition: "0.3s ease",
-  });
-
   useEffect(() => {
     const handleScroll = () => {
       const currentPosition = window.scrollY;
-      setScrollPosition(currentPosition);
 
       if (currentPosition > 100) {
         setPic({ ...picStyle, height: "0px", width: "0px" });

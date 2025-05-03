@@ -1,14 +1,6 @@
-import React from "react";
 import "./ContactForm.css";
 import Swal from "sweetalert2";
 import ScrollAnimation from "react-animate-on-scroll";
-
-interface fillIn {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
 
 function ContactForm() {
   const onSubmit = async (event: any) => {

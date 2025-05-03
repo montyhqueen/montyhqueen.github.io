@@ -1,4 +1,3 @@
-import React from "react";
 import "./Greetings.css";
 import Paragraph from "./Paragraph";
 import linkedIn from "../images/LinkedIn_icon.png";
