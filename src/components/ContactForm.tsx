@@ -48,7 +48,7 @@ function ContactForm() {
             <label>Subject</label>
             <input type="text" name="subject" required />
             <label>Message</label>
-            <textarea name="message" rows={4} required />
+            <textarea name="message" rows={10} required />
             <button name="submit-form" type="submit">
               Submit
             </button>

@@ -38,17 +38,16 @@ function Paragraph({
       {subtitle ? (
         <>
           <b>{subtitle}</b>
-          <br />
         </>
       ) : null}
       {detailed != null ? (
         <>
           <i>{detailed}</i>
-          <br />
         </>
       ) : null}
       {dates ? <i>{dates}</i> : null}
       <p className="content">{content}</p>
+      <div className="sectionEnd" />
     </ScrollAnimation>
   );
 }

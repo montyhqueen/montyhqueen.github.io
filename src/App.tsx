@@ -7,17 +7,20 @@ import Navigation from "./components/Navigation";
 import Paragraph from "./components/Paragraph";
 import SectionHeader from "./components/SectionHeader";
 import ContactForm from "./components/ContactForm";
+import { useEffect, useState } from "react";
 
 function App() {
   //const [count, setCount] = useState(0);
+
   var jobContent = [
+    <br />,
     "August 2020 - Current",
     <br />,
     <b>Languages:</b>,
-    " C#, C++, Java",
+    "  C#, C++, Java",
     <br />,
     <b>Tools:</b>,
-    "Visual Studio, Eclipse, Jira, SVN",
+    "  Visual Studio, Eclipse, Jira, SVN",
   ];
 
   var jobDetails = [
@@ -54,7 +57,6 @@ function App() {
             ]}
           />
         </div>
-        <div className="spacer" />
         <SectionHeader title="History" id="history" />
         <Paragraph
           title="Ultra Maritime"
@@ -73,7 +75,7 @@ function App() {
             "Currently independently studying and trying my hand at using web development tools.  I started with making basic websites for local organizations before expanding my knowledge to incorporate PHP and JavaScript.  This website, however, includes React.  I am applying my knowledge to build a movie rating website that includes user registration/login functionality, API calls, and more.",
           ]}
         />
-        <br />
+        <div className="spacer" />
         <Paragraph
           title="Chat Application"
           dates="Languages: C#, SQL"
@@ -83,7 +85,6 @@ function App() {
           ]}
           side="right"
         />
-        <div className="spacer" />
         <SectionHeader title="Contact" id="contact" />
         <ContactForm />
       </div>
