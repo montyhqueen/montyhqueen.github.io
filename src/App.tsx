@@ -7,16 +7,21 @@ import Navigation from "./components/Navigation";
 import Paragraph from "./components/Paragraph";
 import SectionHeader from "./components/SectionHeader";
 import ContactForm from "./components/ContactForm";
+import MCLogo from "./images/MyChatLogo.png";
+import { useEffect, useState } from "react";
 
 function App() {
+  //const [count, setCount] = useState(0);
+
   var jobContent = [
+    <br />,
     "August 2020 - Current",
     <br />,
     <b>Languages:</b>,
-    " C#, C++, Java",
+    "  C#, C++, Java",
     <br />,
     <b>Tools:</b>,
-    "Visual Studio, Eclipse, Jira, SVN",
+    "  Visual Studio, Eclipse, Jira, SVN",
   ];
 
   var jobDetails = [
@@ -47,13 +52,12 @@ function App() {
             title="University at Buffalo"
             subtitle="Bachelor's of Science in Computer Science"
             photo={UB}
-            dates="August 2016 - May 2020"
+            detailed={[<br />, "August 2016 - May 2020"]}
             content={[
-              "I attended the University at Buffalo where I majored in Computer Science. While there, I took classes that focused on programming fundementals, data structures, project management, and software development. I explored languages such as C++, C#, Python, and JavaScript.",
+              "At the University at Buffalo, I majored in Computer Science.  Over four years I attended various classes that focused on the fundementals of programming, such as data structures, software/project management, collaboration, and documentation.  I also explored various languages including, C++, C#, Python, and Java, which I still use in my current occupation.",
             ]}
           />
         </div>
-        <div className="spacer" />
         <SectionHeader title="History" id="history" />
         <Paragraph
           title="Ultra Maritime"
@@ -66,23 +70,27 @@ function App() {
         <SectionHeader title="Projects" id="projects" />
         <Paragraph
           title="Web Development"
-          dates="Languages: HTML, CSS, SQL, React, TypeScript,JavaScript, PHP"
+          detailed={[
+            <b>Languages:</b>,
+            "  HTML, CSS, SQL, React, TypeScript,JavaScript, PHP",
+          ]}
           photo={webStock}
           content={[
-            "Currently independently studying and trying my hand at using web development tools.  I started with making basic websites for local organizations before expanding my knowledge to incorporate PHP and JavaScript.  This website, however, includes React.  I am applying my knowledge to build a movie rating website that includes user registration/login functionality, API calls, and more.",
+            "I am independently studying tools and languages for web development to build web applications.  With knowledge of HTML, PHP and CSS, I've built basic websites for small organizations in the past.  I've also played around with SQL to get an understanding of working with databases.  As I would love to expand my skills in web development, I build this website utilizing React and TypeScript.  Feeling comfortable with these tools, I am currently developing a more complex website allowing users to rate movies.  In this project I am also incorporating API usages to retrieve movie information as needed to further understand API's.",
           ]}
         />
-        <br />
+        <div className="spacer" />
         <Paragraph
           title="Chat Application"
-          dates="Languages: C#, SQL"
-          photo={webStock}
+          detailed={[<b>Languages:</b>, "  C#, SQL"]}
+          photo={MCLogo}
           content={[
-            "Currently developing a chatting application for Windows.  I am creating both a servier-side app and a client-side app using C# to implement a registration/login system and message transmition between users.  User accounts have functionality beyond messaging, as they can add friends, block users, and set preperences for their accounts.",
+            "I am also applying my knowledge of C# and SQL to develop a chat application.  I created a user registration and login system for user accounts, a server for the application that handles the communications, and basic functionality for the user experience (adding friends, blocking users, account preferences, etc.).  Information is stored in a database, with necessary information being encrypted for security purposes.",
+            <br />,
+            <br />,
           ]}
           side="right"
         />
-        <div className="spacer" />
         <SectionHeader title="Contact" id="contact" />
         <ContactForm />
       </div>

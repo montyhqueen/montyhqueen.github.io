@@ -1,14 +1,16 @@
+.photo-left, .photo-right{
+    width: 400px;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+}
 .photo-left {
     float: left;
-    width: 400px;
-    height: auto;
     padding-right: 40px;
 }
 
 .photo-right {
     float: right;
-    width: 400px;
-    height: auto;
     padding-left: 40px;
 }
 
@@ -21,6 +23,37 @@
     text-align: left;
 }
 
-.content{
+.sectionEnd{
     padding-bottom: 50px;
+    display: block;
+}
+
+b {
+    font-weight:bold;
+}
+
+@media (max-width:750px){
+    .adjust {
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    i, b {
+        padding-top: 5px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .photo-left, .photo-right{
+        float: none;
+        margin: auto;
+        padding: 0px;
+        display: block  ;
+    }
+
+    .content{
+        text-align: center;
+    }
 }

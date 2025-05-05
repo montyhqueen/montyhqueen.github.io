@@ -2,36 +2,35 @@
   "name": "montyhqueen.github.io",
   "private": true,
   "version": "0.0.0",
-  "homepage": "montyhqueen.github.io",
+  "homepage": "https://montyhqueen.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@types/react-animate-on-scroll": "^2.1.8",
+    "@types/react-router": "^5.1.20",
     "animate.css": "^4.1.1",
-    "react": "^18.3.1",
+    "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.9",
-    "react-dom": "^19.0.0",
-    "sweetalert2": "^11.19.1"
+    "react-dom": "^18.2.0",
+    "sweetalert2": "^11.21.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@types/react": "^19.0.10",
-    "@types/react-animate-on-scroll": "^2.1.8",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.22.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^4.4.1",
     "gh-pages": "^6.3.0",
-    "globals": "^16.0.0",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.26.1",
-    "vite": "^6.3.1"
+    "typescript": "^4.9.3",
+    "vite": "^6.3.4"
   }
 }

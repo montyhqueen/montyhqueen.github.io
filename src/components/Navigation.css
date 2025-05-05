@@ -54,3 +54,8 @@
     margin-bottom: 0px;
     transition: "width 0.3s ease";
 }
+
+.collapse a{
+    display: block;
+    padding-top: 5px;
+}

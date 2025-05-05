@@ -1,8 +1,27 @@
 import "./ContactForm.css";
 import Swal from "sweetalert2";
 import ScrollAnimation from "react-animate-on-scroll";
+import { SetStateAction, useState } from "react";
 
 function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSub] = useState("");
+  const [msg, setMsg] = useState("");
+
+  function changeName(event: { target: { value: SetStateAction<string> } }) {
+    setName(event.target.value);
+  }
+  function changeEmail(event: { target: { value: SetStateAction<string> } }) {
+    setEmail(event.target.value);
+  }
+  function changeSub(event: { target: { value: SetStateAction<string> } }) {
+    setSub(event.target.value);
+  }
+  function changeMsg(event: { target: { value: SetStateAction<string> } }) {
+    setMsg(event.target.value);
+  }
+
   const onSubmit = async (event: any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -27,6 +46,10 @@ function ContactForm() {
         text: "Thank you for filling out my contact form!  I'll be sure to reach out to you.",
         icon: "success",
       });
+      setName("");
+      setEmail("");
+      setSub("");
+      setMsg("");
     } else {
       Swal.fire({
         title: "Uh oh...",
@@ -42,13 +65,37 @@ function ContactForm() {
         <center>
           <fieldset className="contact-fieldset">
             <label>Name</label>
-            <input type="text" name="name" required />
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={changeName}
+              required
+            />
             <label>Email</label>
-            <input type="email" name="email" required />
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={changeEmail}
+              required
+            />
             <label>Subject</label>
-            <input type="text" name="subject" required />
+            <input
+              type="text"
+              name="subject"
+              value={subject}
+              onChange={changeSub}
+              required
+            />
             <label>Message</label>
-            <textarea name="message" rows={4} required />
+            <textarea
+              name="message"
+              rows={10}
+              value={msg}
+              onChange={changeMsg}
+              required
+            />
             <button name="submit-form" type="submit">
               Submit
             </button>
