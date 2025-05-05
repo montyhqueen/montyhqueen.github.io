@@ -1,14 +1,16 @@
+.photo-left, .photo-right{
+    width: 400px;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+}
 .photo-left {
     float: left;
-    width: 400px;
-    height: auto;
     padding-right: 40px;
 }
 
 .photo-right {
     float: right;
-    width: 400px;
-    height: auto;
     padding-left: 40px;
 }
 

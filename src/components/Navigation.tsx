@@ -71,28 +71,26 @@ function Navigation() {
 
   return (
     <div ref={navBar} className="nav-style">
-      {window.scrollY < 200 ? (
-        <>
-          <img
-            id="me"
-            src={profilePic}
-            className={"profile"}
-            style={picStyle}
-          ></img>
-          <h1
-            className={"name"}
-            style={isShrunk ? { fontSize: "0px" } : { marginTop: "0px" }}
-          >
-            Montana Queen
-          </h1>
-          <h2
-            className={"job-title"}
-            style={isShrunk ? { fontSize: "0px" } : { marginTop: "0px" }}
-          >
-            Software Engineer
-          </h2>
-        </>
-      ) : null}
+      <>
+        <img
+          id="me"
+          src={profilePic}
+          className={"profile"}
+          style={picStyle}
+        ></img>
+        <h1
+          className={"name"}
+          style={isShrunk ? { fontSize: "0px" } : { marginTop: "0px" }}
+        >
+          Montana Queen
+        </h1>
+        <h2
+          className={"job-title"}
+          style={isShrunk ? { fontSize: "0px" } : { marginTop: "0px" }}
+        >
+          Software Engineer
+        </h2>
+      </>
       {screenWidth > 750 ? (
         <>
           <a href="#about">About</a>
