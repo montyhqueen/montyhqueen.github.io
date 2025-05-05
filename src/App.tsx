@@ -9,6 +9,7 @@ import SectionHeader from "./components/SectionHeader";
 import ContactForm from "./components/ContactForm";
 
 function App() {
+  //const [count, setCount] = useState(0);
   var jobContent = [
     "August 2020 - Current",
     <br />,

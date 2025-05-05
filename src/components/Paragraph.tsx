@@ -33,15 +33,15 @@ function Paragraph({
       animateIn={visible ? "" : "fadeIn"}
       animateOnce={true}
     >
-      {photo ? <img src={photo} className={fSide} /> : null}
-      {title ? <h2 className="adjust">{title}</h2> : null}
+      {photo != null ? <img src={photo} className={fSide} /> : null}
+      {title != null ? <h2 className="adjust">{title}</h2> : null}
       {subtitle ? (
         <>
           <b>{subtitle}</b>
           <br />
         </>
       ) : null}
-      {detailed ? (
+      {detailed != null ? (
         <>
           <i>{detailed}</i>
           <br />
